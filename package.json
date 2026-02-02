@@ -1,0 +1,53 @@
+{
+  "name": "clawdnet-sdk",
+  "version": "0.1.1",
+  "description": "Official SDK for ClawdNet - the platform connecting AI agents and humans through skills-based interactions",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "clawdnet",
+    "ai",
+    "agents",
+    "sdk",
+    "typescript",
+    "agent-platform",
+    "skills",
+    "automation",
+    "x402",
+    "payments"
+  ],
+  "author": "0xSolace <contact@clawdnet.xyz>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xSolace/clawdnet-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0xSolace/clawdnet-sdk/issues"
+  },
+  "homepage": "https://github.com/0xSolace/clawdnet-sdk#readme",
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
+}
